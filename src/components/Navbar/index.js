@@ -103,25 +103,25 @@ const Navbar = () => {
         <nav className={`${classes.footer} container`}>
           <div className={classes.content}>
             <div className={classes.icon}>
-            <i className="icon-home"></i>
+            <i className="icon-home-outline"></i>
             </div>
             <h1>Home</h1>
           </div>
           <div className={classes.content}>
             <div className={classes.icon}>
-            <i class="icon-events"></i>
+            <i class="icon-events-outline"></i>
             </div>
             <h1>Events</h1>
           </div>
           <div className={classes.content}>
             <div className={classes.icon}>
-            <i class="icon-Notification"></i>
+            <i class="icon-notification-outline"></i>
             </div>
             <h1>Notification</h1>
           </div>
           <div className={classes.content}>
             <div className={classes.icon}>
-            <i class="icon-Profile"></i>
+            <i class="icon-profile-outline"></i>
             </div>
             <h1>Profile</h1>
           </div>

@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../Fonts/icomoon.eot?89xacb');
-  src:  url('../Fonts/icomoon.eot?89xacb#iefix') format('embedded-opentype'),
-    url('../Fonts/icomoon.ttf?89xacb') format('truetype'),
-    url('../Fonts/icomoon.woff?89xacb') format('woff'),
-    url('../Fonts/icomoon.svg?89xacb#icomoon') format('svg');
+  src:  url('../Fonts/icomoon.eot?83hy0m');
+  src:  url('../Fonts/icomoon.eot?83hy0m#iefix') format('embedded-opentype'),
+    url('../Fonts/icomoon.ttf?83hy0m') format('truetype'),
+    url('../Fonts/icomoon.woff?83hy0m') format('woff'),
+    url('../Fonts/icomoon.svg?83hy0m#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 i {
-  /* use !important to prevent issues with browser extensions that change fonts */
+  /* use !important to prevent issues with browser extensions that change ../Fonts */
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -25,19 +25,23 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-home-outline:before {
+  content: "\e91c";
+  color: #fff;
+}
+.icon-events-outline:before {
+  content: "\e91f";
+  color: #fff;
+}
 .icon-Close:before {
   content: "\e91d";
   color: #0869a8;
 }
-.icon-events:before {
-  content: "\e91c";
-  color: #1c84c8;
-}
-.icon-Notification:before {
+.icon-notification-outline:before {
   content: "\e919";
   color: #fff;
 }
-.icon-Profile:before {
+.icon-profile-outline:before {
   content: "\e91a";
   color: #fff;
 }
