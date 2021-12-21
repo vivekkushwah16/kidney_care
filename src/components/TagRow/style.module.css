@@ -1,0 +1,52 @@
+.wrapper{
+  position: absolute;
+  bottom: 10.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3rem;
+  /* width: 100%; */
+  font-family: Montserrat_500;
+  color: var(--primary_color);
+  font-size: 1.3rem;
+  align-items: center;
+  user-select: none;
+}
+.wrapper h1{
+  font-size: 1.3rem;
+}
+.tag button{
+  font-family: Montserrat_500;
+  color: var(--primary_color);
+  background: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  font-size: 1.3rem;
+  
+}
+.tag button:hover{
+  background: #015189;
+  color: #fff;
+}
+@media only screen and (max-width:991px) {
+  .wrapper{
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrapper{
+    /* display: none; */
+    bottom: -5rem;
+    overflow-x: scroll;
+    padding:0 1.5rem;
+    width: 100%;
+  }
+  .wrapper {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.wrapper::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+}

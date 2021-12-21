@@ -1,0 +1,36 @@
+.wrapper{
+ padding-left:3rem;
+ color: var(--primary_color);
+ margin-bottom: 4rem;
+ background: linear-gradient(180deg, rgba(255, 255, 255, 0) 2.69%, #FFFFFF 35.02%);
+}
+.videoTile{
+display: flex;
+align-items: center;
+margin-bottom: 1.5rem;
+user-select: none;
+}
+.videoHeading{
+  font-size: 1.5rem !important;
+  font-family: Montserrat_Bold;
+  margin-right: 1.8rem;
+}
+.videoTile p{
+  font-size: 1rem;
+  font-family: Montserrat_500;
+}
+.videos{
+  overflow: hidden;
+}
+.videos button{
+  display: none ;
+}
+.videos:hover button{
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .wrapper{
+    padding-left:2rem;
+    margin-top: 3rem;
+  }
+}

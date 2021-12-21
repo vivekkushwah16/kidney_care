@@ -1,0 +1,60 @@
+.videoCard{
+    width: 22.3rem;
+    height: 16.4rem;
+    position: relative;
+    margin-right: 3rem;
+    user-select: none;
+    /* cursor: pointer; */
+}
+.cardImage,.cardBody{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+     z-index: 1;
+  
+  }
+  .cardImage img{
+    width: 100%;
+    height: 100%;
+  }
+  .cardBody{
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) -10.09%, rgba(0, 0, 0, 0.15) 42.08%);
+  }
+  .content{
+      position: absolute;
+      bottom: 0;
+      color: var(--white);
+      font-size: 1.3rem;
+     
+  }
+  .content h1{
+    font-size: 1.3rem;
+    line-height: 1.3;
+    font-family: Montserrat_Bold;
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .likeCounter{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.4rem;
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.48) -10.09%, rgba(0, 0, 0, 0.12) 42.08%);
+      color: var(--white);
+      font-size: 1.3rem;
+  }
+  .Likes{
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+  }
+  .Likes i:first-child{
+      color:#A9A9A9;
+      cursor: pointer;
+  }
+  .liked{
+   color: #e55 !important;
+  }
