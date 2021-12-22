@@ -6,6 +6,7 @@ import downArrow from "../../assets/images/Polygon 1.png";
 import profileImage from "../../assets/images/Ellipse 8(1).png";
 const Navbar = () => {
   const [openNav, setNav] = useState(false);
+  // useLocation
   return (
     <>
       <section className={classes.Wrapper}>

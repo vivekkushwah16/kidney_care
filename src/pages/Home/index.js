@@ -20,7 +20,7 @@ const Home = () => {
   const[like,setLike]=useState(null);
   var settings = {
     dots: false,
-    autoplay:true,
+    // autoplay:true,
     infinite: true,
     prevArrow: <SamplePrevArrow color="#0463a0" />,
     nextArrow: <SampleNextArrow color="#0463a0" />,

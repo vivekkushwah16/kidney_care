@@ -38,7 +38,7 @@ const Banner = () => {
                 <div>
                 <i className="icon-time_loop"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span><span className="path5"></span><span className="path6"></span></i>
                 </div>
-                <h1 className={style.time}>10 JuLY 2021</h1>
+                <h1 className={style.time}>8:00 pm – 9:00 pm</h1>
               </div>
             <button className="btn btn-secondary">WATCH NOW</button>
             </div>
