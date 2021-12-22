@@ -31,12 +31,19 @@
   color: var(--primary_color);
   padding: 20px 0;
 }
+.link{
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--primary_color);
+  padding: 20px 0;
+  text-decoration: none;
+}
 .link:hover {
   /* border-bottom: 3px solid var(--secondary_color); */
   color: var(--secondary_color) !important;
   /* font-family: Montserrat_Bold; */
 }
-.activeLink {
+.active {
   border-bottom: 4px solid var(--secondary_color);
   color: var(--secondary_color) !important;
   font-family: Montserrat_Bold;
@@ -201,4 +208,7 @@
     font-size: 1rem;
     margin-top: 0.5rem;
   }
+  .active{
+    border: none;
+  } 
 }

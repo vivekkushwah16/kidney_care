@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import classes from "./style.module.css";
 import logo from "../../assets/images/Group 824.png";
 import { Link } from "react-router-dom";
@@ -6,7 +7,8 @@ import downArrow from "../../assets/images/Polygon 1.png";
 import profileImage from "../../assets/images/Ellipse 8(1).png";
 const Navbar = () => {
   const [openNav, setNav] = useState(false);
-  // useLocation
+  const location = useLocation();
+  console.log(location)
   return (
     <>
       <section className={classes.Wrapper}>
@@ -20,16 +22,80 @@ const Navbar = () => {
           <ul
             className={`${classes.menuItems} ${openNav && classes.mobileNav}`}
           >
-          <li className={classes.CloseIcon} onClick={() => setNav(false)}>
-          <i className="icon-Close"></i>
-          </li>
-            <li className={classes.link}>About Kidney disease &#62;</li>
-            <li className={classes.link}>Video Library </li>
-            <li className={classes.link}>Events</li>
-            <li className={classes.link}>Community & Forums</li>
-            <li className={classes.link}>Blogs & Research</li>
-            <li className={classes.link}>Stories</li>
-            <li className={classes.link}> About Us</li>
+            <li className={classes.CloseIcon} onClick={() => setNav(false)}>
+              <i className="icon-Close"></i>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/home"
+                className={classes.link}
+                activeClassName={classes.active}
+              >
+                About Kidney disease &#62;
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/video"
+                className={classes.link}
+                activeClassName={classes.active}
+              >
+                Video Library{" "}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/events"
+                className={classes.link}
+                activeClassName={classes.active}
+              >
+                Events
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/community"
+                className={classes.link}
+                activeClassName={classes.active}
+              >
+                Community & Forums
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/blog"
+                className={classes.link}
+                activeClassName={classes.active}
+              >
+                Blogs & Research
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/stories"
+                className={classes.link}
+                activeClassName={classes.active}
+              >
+                Stories
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/about"
+                className={classes.link}
+                activeClassName={classes.active}
+              >
+                {" "}
+                About Us
+              </NavLink>
+            </li>
             {!openNav && (
               <>
                 <li>
@@ -98,31 +164,30 @@ const Navbar = () => {
             )}
           </ul>
         </nav>
-        
       </section>
       <section className={`${classes.FooterWrapper}`}>
         <nav className={`${classes.footer} container`}>
           <div className={classes.content}>
             <div className={classes.icon}>
-            <i className="icon-home-outline"></i>
+              <i className="icon-home-outline"></i>
             </div>
             <h1>Home</h1>
           </div>
           <div className={classes.content}>
             <div className={classes.icon}>
-            <i class="icon-events-outline"></i>
+              <i class="icon-events-outline"></i>
             </div>
             <h1>Events</h1>
           </div>
           <div className={classes.content}>
             <div className={classes.icon}>
-            <i class="icon-notification-outline"></i>
+              <i class="icon-notification-outline"></i>
             </div>
             <h1>Notification</h1>
           </div>
           <div className={classes.content}>
             <div className={classes.icon}>
-            <i class="icon-profile-outline"></i>
+              <i class="icon-profile-outline"></i>
             </div>
             <h1>Profile</h1>
           </div>
