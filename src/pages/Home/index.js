@@ -15,9 +15,10 @@ import Recommanded from "../../components/VideoCards/Recommanded";
 import { RecommandedCard } from "../../Constants/RecommandedCards";
 import { CommingSoonCards } from "../../Constants/CommingSoonCards";
 import CommingSoon from "../../components/VideoCards/ComingSoon";
-import "../../assets/css/global.css"
+import "../../assets/css/global.css";
+import Footer from "../../components/Footer";
 const Home = () => {
-  const[like,setLike]=useState(null);
+  const [like, setLike] = useState(null);
   var settings = {
     dots: false,
     // autoplay:true,
@@ -28,13 +29,16 @@ const Home = () => {
     variableWidth: false,
     slidesToScroll: 1,
     rows: 1,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        dots: true,
-        arrows:false,
-        dotsClass:style.custom_dots,
-      }}]
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          dots: true,
+          arrows: false,
+          dotsClass: style.custom_dots,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -66,7 +70,7 @@ const Home = () => {
         {/* =================== Most Liked Videos ===========================  */}
 
         <VideoRows heading="Most Liked Videos">
-        {MostLikedCards.map((item) => (
+          {MostLikedCards.map((item) => (
             <MostLiked
               key={item.key}
               title={item.title}
@@ -78,10 +82,10 @@ const Home = () => {
             />
           ))}
         </VideoRows>
-         {/* =================== Recommended Videos ===========================  */}
+        {/* =================== Recommended Videos ===========================  */}
 
-         <VideoRows heading="Recommended Videos">
-        {RecommandedCard.map((item) => (
+        <VideoRows heading="Recommended Videos">
+          {RecommandedCard.map((item) => (
             <Recommanded
               key={item.key}
               title={item.title}
@@ -92,10 +96,10 @@ const Home = () => {
             />
           ))}
         </VideoRows>
-         {/* =================== Comming Soon Videos ===========================  */}
+        {/* =================== Comming Soon Videos ===========================  */}
 
-         <VideoRows heading="Comming Soon">
-        {CommingSoonCards.map((item) => (
+        <VideoRows heading="Comming Soon">
+          {CommingSoonCards.map((item) => (
             <CommingSoon
               key={item.key}
               title={item.title}
@@ -105,6 +109,7 @@ const Home = () => {
           ))}
         </VideoRows>
       </div>
+      <Footer />
     </>
   );
 };

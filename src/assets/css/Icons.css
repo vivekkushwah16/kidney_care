@@ -24,12 +24,25 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-home-outline:before {
-  content: "\e91c";
+  content: "\e91e";
   color: #fff;
 }
-.icon-events-outline:before {
+/* .icon-events-outline .path1:before {
+  content: "\e920";
+  color: #fff;
+}
+.icon-events-outline .path2:before {
+  content: "\e921";
+  color: #fff;
+  margin-left: -1.2177734375em;
+}
+.icon-events-outline .path3:before {
+  content: "\e922";
+  color: #1c84c8;
+  margin-left: -1.2177734375em;
+} */
+.icon-events:before {
   content: "\e91f";
   color: #fff;
 }
@@ -50,7 +63,7 @@ i {
   color: #0869a8;
 }
 .icon-home:before {
-  content: "\e91e";
+  content: "\e91c";
   color: #fff;
 }
 .icon-next_arrow:before {

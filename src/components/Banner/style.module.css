@@ -18,7 +18,7 @@
 }
 .article {
   width: 39rem;
-  height: 27rem;
+  height: 26rem;
   box-shadow: 0px 4px 24px 0px #00000026;
   position: relative;
   top: 14rem;
@@ -46,22 +46,20 @@
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 1rem;
+  row-gap: 1.2rem;
   column-gap: 3rem;
- 
 }
 .doctor {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .doctor img {
   width: 3rem;
 }
-.aboutDoctor h1,
-.time {
+.aboutDoctor h1 {
   font-size: 1rem;
   line-height: 1.5;
   font-family: Montserrat_500;
@@ -72,8 +70,11 @@
 }
 .time {
   color: var(--primary_color);
+  font-size: 1rem;
+
+  font-family: Montserrat_500;
 }
-.article button{
+.article button {
   margin-top: 1rem;
   justify-self: flex-start;
   font-family: Montserrat_Bold;
@@ -90,12 +91,20 @@
   }
 }
 @media only screen and (max-width: 767px) {
- 
   .wrapper {
     min-height: 35rem;
-  
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 8.65%, rgba(255, 255, 255, 0) 31.75%), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 60.42%, rgba(255, 206, 206, 0.4) 100%),
-    url(../../assets/images/image_28.jpg);
+
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.6) 8.65%,
+        rgba(255, 255, 255, 0) 31.75%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.2) 60.42%,
+        rgba(255, 206, 206, 0.4) 100%
+      ),
+      url(../../assets/images/image_28.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -116,8 +125,8 @@
     flex-direction: column;
   }
   .summary {
-    font-size:1rem;
-    margin-bottom:0.5rem ;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
   .mainHeading {
     font-size: 1.5rem;
@@ -128,27 +137,30 @@
     row-gap: 0.7rem;
     margin-bottom: 0rem;
   }
-  .doctor{
-    font-size: 2.5rem;
+  .doctor {
+    font-size: 1.7rem;
   }
   .doctor img {
-    width:2.5rem
+    width: 2.5rem;
   }
   .aboutDoctor h1,
-.time { font-size: 0.8rem;}
-.article button{
-  /* justify-self: right; */
-  
-  grid-column: 2/3;
-  transform: translateY(-100%);
-  margin: 0;
-}
-.doctor:nth-child(even){
-  transform: translateY(-100%);
-}
+  .time {
+    font-size: 0.8rem;
+  }
+  .article button {
+    /* justify-self: right; */
 
+    grid-column: 2/3;
+    transform: translateY(-100%);
+    margin: 0;
+  }
+  .doctor:nth-child(even) {
+    transform: translateY(-125%);
+  }
 }
 
 @media only screen and (max-width: 344px) {
-  .article {transform: scale(0.7) translateX(-15%);}
+  .article {
+    transform: scale(0.7) translateX(-15%);
+  }
 }

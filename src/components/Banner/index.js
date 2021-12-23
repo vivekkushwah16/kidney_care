@@ -22,9 +22,9 @@ const Banner = () => {
                 </div>
               </div>
               <div className={style.doctor}>
-                <div>
+              
                 <i className="icon-calender"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span><span className="path5"></span><span className="path6"></span><span className="path7"></span><span className="path8"></span><span className="path9"></span><span className="path10"></span><span className="path11"></span><span className="path12"></span><span className="path13"></span><span className="path14"></span><span className="path15"></span><span className="path16"></span></i>
-                </div>
+               
                 <h1 className={style.time}>10 JuLY 2021</h1>
               </div>
               <div className={style.doctor}>
@@ -35,9 +35,9 @@ const Banner = () => {
                 </div>
               </div>
               <div className={style.doctor}>
-                <div>
+               
                 <i className="icon-time_loop"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span><span className="path5"></span><span className="path6"></span></i>
-                </div>
+               
                 <h1 className={style.time}>8:00 pm – 9:00 pm</h1>
               </div>
             <button className="btn btn-secondary">WATCH NOW</button>

@@ -1,0 +1,53 @@
+.Wrapper,
+.FooterWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 14px 0px #00000026;
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  z-index: 1;
+}
+.FooterWrapper {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .Wrapper {
+    padding: 0 0.5rem;
+    z-index: 2;
+  }
+  .FooterWrapper {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(180deg, #1c84c8 -7.86%, #0869a8 80%);
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.55);
+    z-index: 1;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7rem;
+    user-select: none;
+  }
+  .footer .content{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Montserrat_regular;
+    color: var(--white);
+    cursor: pointer;
+  }
+  .footer .content h1{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .active{
+    border: none;
+  } 
+}
+.textBold{
+  font-family: Montserrat_Bold;
+}
