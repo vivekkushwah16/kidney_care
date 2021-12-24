@@ -24,6 +24,18 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-save:before {
+  content: "\e921";
+  /* color: #848484; */
+}
+.icon-dis_like:before {
+  content: "\e922";
+  /* color: #848484; */
+}
+.icon-like:before {
+  content: "\e923";
+  /* color: #848484; */
+}
 .icon-home-outline:before {
   content: "\e91e";
   color: #fff;

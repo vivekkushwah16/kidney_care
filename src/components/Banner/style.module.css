@@ -65,11 +65,11 @@
   font-family: Montserrat_500;
 }
 .aboutDoctor h1:first-child {
-  color: var(--primary_color);
+  color: #2F64A1;
   font-family: Montserrat_Bold;
 }
 .time {
-  color: var(--primary_color);
+  color: #0869A8;
   font-size: 1rem;
 
   font-family: Montserrat_500;
@@ -159,7 +159,12 @@
   }
 }
 
-@media only screen and (max-width: 344px) {
+@media only screen and (max-width: 320px) {
+  .article {
+    transform: scale(0.7) translateX(-9%);
+  }
+}
+@media only screen and (max-width: 319px) {
   .article {
     transform: scale(0.7) translateX(-15%);
   }

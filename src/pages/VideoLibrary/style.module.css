@@ -1,0 +1,347 @@
+.wrapper {
+  position: relative;
+}
+.container {
+  position: relative;
+  top: 9rem;
+  display: grid;
+  grid-template-columns: 70rem 24rem;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.videoCard {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+.videoHead {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 11rem;
+}
+.video {
+  width: 100%;
+  height: 100%;
+}
+.doctor {
+  display: flex;
+  position: absolute;
+  bottom: 11rem;
+  height: 5.3rem;
+}
+.docName {
+  padding: 1rem 2rem;
+  background-color: var(--secondary_color);
+}
+.docName h1 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-family: Montserrat_500;
+  color: var(--white);
+  letter-spacing: 0.05rem;
+}
+.docName h1:first-child {
+  font-family: Montserrat_Bold;
+}
+.blueDiv {
+  width: 1rem;
+  height: 100%;
+  background-color: #005188;
+  align-self: stretch;
+}
+.videoBody {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #848484;
+  padding: 1rem 0;
+  position: relative;
+}
+.videoBody h1 {
+  font-size: 1.5rem;
+  font-family: Montserrat_Bold;
+  line-height: 1.2;
+  color: #005188;
+  max-width: 31rem;
+}
+.moreAboutVideo {
+  position: absolute;
+  bottom: 0.7rem;
+  right: 0;
+  display: flex;
+}
+.videIcons {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.videIcons i {
+  color: #848484;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.videIcons span {
+  font-size: 1.3rem;
+  font-family: Montserrat_Bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.aboutDoctorWraper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.aboutDoctorWraper img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.aboutDoctor h1 {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: Montserrat_500;
+  color: #005188;
+}
+.aboutDoctor h1:first-child {
+  font-family: Montserrat_Bold;
+}
+.videosTitle {
+  display: none;
+}
+.moreVideos {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  margin-bottom: 1rem;
+}
+.thumnail {
+  max-width: 10rem;
+  height: 6rem;
+  position: relative;
+  /* margin-right: 1rem; */
+}
+.thumnail img {
+  width: 100%;
+  height: 100%;
+}
+.videoTime {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 95%;
+  display: flex;
+  align-items: flex-end;
+}
+.line {
+  height: 0.3rem;
+  width: 100%;
+  background-color: #0869a8;
+}
+.time {
+  background-color: #0869a8;
+  color: var(--white);
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  font-family: Montserrat_Bold;
+  letter-spacing: 0.02rem;
+}
+.videoDestail {
+  width: 12rem;
+  padding: 0.3rem 0;
+}
+.videoDestail h1,
+h2,
+h3 {
+  font-size: 0.83rem;
+  /* margin-bottom: 0.2rem; */
+  font-family: Montserrat_Bold;
+  letter-spacing: 0.03rem;
+  line-height: 1.3;
+}
+.videoDestail h1 {
+  margin-bottom: 0.4rem;
+}
+.videoDestail h2 {
+  font-size: 0.63rem;
+  color: #515151;
+  letter-spacing: 0.04rem;
+}
+.videoDestail h3 {
+  font-size: 0.63rem;
+  font-family: Montserrat_500;
+  color: #515151;
+  letter-spacing: 0.04rem;
+}
+.more {
+  color: #515151;
+  font-family: Montserrat_Bold;
+  margin-top: 0.2rem;
+}
+.more span {
+  font-size: 0.75rem;
+  margin-right: 1rem;
+}
+.more span:last-child{
+  font-family: Montserrat_regular;
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    padding: 0 3.9rem;
+    grid-template-columns: 61rem 24rem;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    padding-bottom: 8rem;
+  }
+  .container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+  }
+  .Navbar section {
+    display: none;
+  }
+  .Navbar {
+    padding-left: 2rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    user-select: none;
+  }
+  .Navbar a {
+    font-size: 1.1rem;
+    color: #005188;
+    text-decoration: none;
+    font-family: Montserrat_Bold;
+  }
+  .Navbar a i {
+    margin-right: 0.5rem;
+  }
+  .logo {
+    display: none;
+  }
+  .doctor {
+    display: flex;
+    position: absolute;
+    bottom: 4rem;
+    height: 3.4rem;
+  }
+  .docName {
+    padding: 0.5rem 1rem;
+  }
+  .docName h1 {
+    font-size: 0.7rem;
+    letter-spacing: 0.08rem;
+  }
+  .videoBody {
+    padding: 1rem 2rem;
+  }
+  .videoBody h1 {
+    font-size: 1.8rem;
+    max-width: 100%;
+  }
+  .moreAboutVideo {
+    bottom: -3.1rem;
+  }
+  .videIcons {
+    font-size: 1.2rem;
+  }
+  .aboutDoctorWraper {
+    padding: 0 2rem;
+    margin-top: 1.5rem;
+  }
+  .allVideos {
+    margin-top: 0.5rem;
+    padding: 0 2rem;
+  }
+  .videosTitle {
+    display: block;
+    margin-bottom: 1.7rem;
+    font-family: Montserrat_Bold;
+    color: #0869a8;
+  }
+
+  .time {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+  .moreVideos {
+    justify-content: flex-start;
+    grid-template-columns: auto 1.2fr;
+    column-gap: 1.5rem;
+  }
+  .thumnail {
+    max-width: 14.5rem;
+    width: 14.5rem;
+    height: 7.5rem;
+  }
+  .videoDestail {
+    width: 100%;
+  }
+  .videoDestail h1 {
+    font-size: 1.1rem;
+  }
+  .videoDestail h2 {
+    font-size: .9rem;
+  }
+  .videoDestail h3 {
+    font-size: .8rem;
+  }
+  .more span {
+    font-size: .9rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .videIcons {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+ 
+  .videIcons span {
+    font-size: .9rem;
+  }
+  .thumnail {
+    max-width: 10rem;
+    width: 10rem;
+    height: 6rem;
+  }
+  .videoDestail h1 {
+    margin-bottom: 0.4rem;
+    font-size: 0.83rem;
+  }
+  .videoDestail h2 {
+    font-size: 0.63rem;
+    color: #515151;
+    letter-spacing: 0.04rem;
+  }
+  .videoDestail h3 {
+    font-size: 0.63rem;
+    font-family: Montserrat_500;
+    color: #515151;
+    letter-spacing: 0.04rem;
+  }
+  .more {
+    color: #515151;
+    font-family: Montserrat_Bold;
+    margin-top: 0.2rem;
+  }
+  .more span {
+    font-size: 0.75rem;
+    margin-right: 1rem;
+  }
+}
+.like,.disLike,.save{
+  color: #005188 !important;
+}

@@ -1,0 +1,143 @@
+
+.moreVideos {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  margin-bottom: 1rem;
+}
+.thumnail {
+  max-width: 10rem;
+  height: 6rem;
+  position: relative;
+  /* margin-right: 1rem; */
+}
+.thumnail img {
+  width: 100%;
+  height: 100%;
+}
+.videoTime {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 95%;
+  display: flex;
+  align-items: flex-end;
+}
+.line {
+  height: 0.3rem;
+  width: 100%;
+  background-color: #0869a8;
+}
+.time {
+  background-color: #0869a8;
+  color: var(--white);
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  font-family: Montserrat_Bold;
+  letter-spacing: 0.02rem;
+}
+.videoDestail {
+  width: 12rem;
+  padding: 0.3rem 0;
+}
+.videoDestail h1,
+h2,
+h3 {
+  font-size: 0.83rem;
+  /* margin-bottom: 0.2rem; */
+  font-family: Montserrat_Bold;
+  letter-spacing: 0.03rem;
+  line-height: 1.3;
+}
+.videoDestail h1 {
+  margin-bottom: 0.4rem;
+}
+.videoDestail h2 {
+  font-size: 0.63rem;
+  color: #515151;
+  letter-spacing: 0.04rem;
+}
+.videoDestail h3 {
+  font-size: 0.63rem;
+  font-family: Montserrat_500;
+  color: #515151;
+  letter-spacing: 0.04rem;
+}
+.more {
+  color: #515151;
+  font-family: Montserrat_Bold;
+  margin-top: 0.2rem;
+}
+.more span {
+  font-size: 0.75rem;
+  margin-right: 1rem;
+}
+.more span:last-child{
+  font-family: Montserrat_regular;
+}
+
+
+@media only screen and (max-width: 767px) {
+ 
+  .time {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+  .moreVideos {
+    justify-content: flex-start;
+    grid-template-columns: auto 1.2fr;
+    column-gap: 1.5rem;
+  }
+  .thumnail {
+    max-width: 14.5rem;
+    width: 14.5rem;
+    height: 7.5rem;
+  }
+  .videoDestail {
+    width: 100%;
+  }
+  .videoDestail h1 {
+    font-size: 1.1rem;
+  }
+  .videoDestail h2 {
+    font-size: .9rem;
+  }
+  .videoDestail h3 {
+    font-size: .8rem;
+  }
+  .more span {
+    font-size: .9rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+ 
+  .thumnail {
+    max-width: 10rem;
+    width: 10rem;
+    height: 6rem;
+  }
+  .videoDestail h1 {
+    margin-bottom: 0.4rem;
+    font-size: 0.83rem;
+  }
+  .videoDestail h2 {
+    font-size: 0.63rem;
+    color: #515151;
+    letter-spacing: 0.04rem;
+  }
+  .videoDestail h3 {
+    font-size: 0.63rem;
+    font-family: Montserrat_500;
+    color: #515151;
+    letter-spacing: 0.04rem;
+  }
+  .more {
+    color: #515151;
+    font-family: Montserrat_Bold;
+    margin-top: 0.2rem;
+  }
+  .more span {
+    font-size: 0.75rem;
+    margin-right: 1rem;
+  }
+}
