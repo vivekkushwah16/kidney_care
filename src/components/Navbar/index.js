@@ -39,7 +39,7 @@ const Navbar = () => {
                 className={classes.link}
                 activeClassName={classes.active}
               >
-                Video Library{" "}
+                Video Library
               </NavLink>
             </li>
             <li>
